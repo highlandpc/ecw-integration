@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECW Integration Endpoint</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #007cba;
+            padding-bottom: 10px;
+        }
+        .status {
+            background: #e8f5e8;
+            border-left: 4px solid #4caf50;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        .link {
+            background: #f0f8ff;
+            border: 1px solid #007cba;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        a {
+            color: #007cba;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .key-info {
+            background: #fff9e6;
+            border-left: 4px solid #ffb300;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 ECW Integration Endpoint</h1>
+        
+        <div class="status">
+            ✅ <strong>Active</strong> - This endpoint is configured for eClinicalWorks FHIR integration
+        </div>
+        
+        <h2>Available Resources</h2>
+        
+        <div class="link">
+            📋 <strong>JWKS (JSON Web Key Set)</strong><br>
+            <a href="./jwks.json" target="_blank">jwks.json</a>
+            <br><small>Public key for JWT signature verification</small>
+        </div>
+        
+        <div class="key-info">
+            <strong>Current Key Information:</strong><br>
+            Key ID: <code>ecw-jwt-key-55ec0ab5</code><br>
+            Algorithm: <code>RS384</code><br>
+            Use: <code>sig</code> (signature verification)
+        </div>
+        
+        <h2>Integration Details</h2>
+        <ul>
+            <li><strong>Purpose:</strong> ECW FHIR Backend Services authentication</li>
+            <li><strong>Standard:</strong> SMART on FHIR Backend Services</li>
+            <li><strong>Method:</strong> Private Key JWT (client_credentials)</li>
+            <li><strong>Status:</strong> Development/Testing</li>
+        </ul>
+        
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; font-size: 12px; color: #666;">
+            Generated for HPC-RPM ↔ eClinicalWorks integration
+        </div>
+    </div>
+</body>
+</html>
