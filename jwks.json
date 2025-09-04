@@ -1,5 +1,5 @@
 {
-    "keys": [
+  "keys": [
     {
       "kty": "RSA",
       "alg": "RS384",
@@ -10,7 +10,7 @@
         "verify"
       ],
       "ext": true,
-      "kid": "ecw-jwt-key-e963c62b"
+      "kid": "ecw-jwt-key-626fedee"
     }
   ]
 }
